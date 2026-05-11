@@ -42,7 +42,10 @@ INSERT INTO genre (bezeichnung, beschreibung) VALUES
 ('Fantasy', 'Magie, Fabelwesen und übernatürliche Welten.'),
 ('Drama', 'Fokus auf tiefgreifende Charakterentwicklung und Konflikte.'),
 ('Komödie', 'Filme, die primär zur Unterhaltung und zum Lachen dienen.'),
-('Horror', 'Zielt darauf ab, beim Zuschauer Angst und Schrecken zu erzeugen.');
+('Horror', 'Zielt darauf ab, beim Zuschauer Angst und Schrecken zu erzeugen.'),
+('Thriller', 'Adrenalinbetonte Handlung mit Fokus auf Verbrechen, Gefahr und Nervenkitzel.'),
+('Krimi', 'Thematisiert die Aufklärung eines Verbrechens durch die Suche nach Tätern und Motiven.');
+
 
 -- Medien
 INSERT INTO medien (bezeichnung) VALUES 
@@ -148,14 +151,70 @@ VALUES (
 );
 
 -- Verbindungen
-INSERT INTO film_genre
 
-INSERT INTO film_medien
+INSERT INTO film_genre (filmeID, genreID)
+VALUES
+(1, 1),
+(1, 2),
+(1, 4),
+(2, 3),
+(3, 1),
+(3, 3),
+(3, 8),
+(4, 1),
+(4, 8),
+(4, 9),
+(5, 2)
+;
 
-INSERT INTO film_produktionsland
+INSERT INTO film_medien (filmeID, medienID)
+VALUES
+(1, 1),
+(1, 2),
+(1, 4),
+(1, 5),
+(2, 2),
+(2, 3),
+(2, 4),
+(2, 5),
+(3, 1),
+(3, 2),
+(3, 3),
+(3, 4),
+(3, 5),
+(4, 1),
+(4, 2),
+(4, 3),
+(4, 4),
+(4, 5),
+(5, 1),
+(5, 2),
+(5, 3),
+(5, 4),
+(5, 5),
+(5, 6)
+;
 
-INSERT INTO film_regie
+INSERT INTO film_produktionsland (filmeID, landID)
+VALUES
+(1, 2),
+(2, 2),
+(2, 3),
+(3, 2),
+(3, 3),
+(4, 2),
+(5, 2)
+;
 
-INSERT INTO film_schauspieler
+INSERT INTO film_regie (filmeID, regieID)
+VALUES
+(1, )
+;
 
-INSERT INTO film_studio
+INSERT INTO film_schauspieler (filmeID, schauspielerID, rollen_name, gage, rollenID)
+VALUES
+;
+
+INSERT INTO film_studio (filmeID, studioID)
+VALUES
+;
