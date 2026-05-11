@@ -37,7 +37,7 @@ CREATE TABLE regie(
 id INT AUTO_INCREMENT PRIMARY KEY,
 vorname VARCHAR(100),
 nachname VARCHAR(100),
-geburtsdatum YEAR,
+geburtsdatum DATE,
 geschlecht VARCHAR(100),
 nationalität VARCHAR(100)
 );
