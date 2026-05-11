@@ -28,7 +28,7 @@ INSERT INTO schauspieler (vorname, nachname, geburtsdatum, geschlecht, nationali
 ('Albert', 'Brooks', '1947-07-22', 'männlich', 'USA'),
 ('Ellen', 'DeGeneres', '1958-01-26', 'weiblich', 'USA'),
 ('Alexander', 'Gould', '1994-05-04', 'männlich', 'USA'),
-('Willem', 'Dafoe', '1955-07-22', 'männlich', 'USA');
+('Willem', 'Dafoe', '1955-07-22', 'männlich', 'USA')
 ;
 
 -- FSK
